@@ -1,0 +1,78 @@
+{
+    "env": {
+        "browser": true,
+        "es2021": true
+    },
+    "extends": [
+        "plugin:react/recommended",
+        "airbnb",
+        "prettier"
+    ],
+    "parser": "@typescript-eslint/parser",
+    "parserOptions": {
+        "ecmaFeatures": {
+            "jsx": true,
+            "arrowFunctions": true
+        },
+        "rules": {
+            "react-hooks/rules-of-hooks": "error",
+            "react-hooks/exhaustive-deps": "off"
+        },
+        "ecmaVersion": 12,
+        "sourceType": "module"
+    },
+    "plugins": [
+        "react",
+        "@typescript-eslint",
+        "react-hooks"
+    ],
+    "settings": {
+        "react": {
+            "version": "detect" // Tells eslint-plugin-react to automatically detect the version of React to use
+        },
+        "import/resolver": {
+            "node": {
+                "extensions": [
+                    ".js",
+                    ".jsx",
+                    ".ts",
+                    ".tsx"
+                ],
+                "paths": [
+                    "./src"
+                ]
+            }
+        }
+    },
+    "rules": {
+        "comma-dangle": "off", // https://eslint.org/docs/rules/comma-dangle
+        "function-paren-newline": "off", // https://eslint.org/docs/rules/function-paren-newline
+        "no-inner-declarations": "off", // https://eslint.org/docs/rules/no-inner-declarations
+        "class-methods-use-this": "off",
+        "import/extensions": "off",
+        "import/prefer-default-export": "off",
+        "@typescript-eslint/explicit-function-return-type": "off",
+        "@typescript-eslint/no-var-requires": "off",
+        "react/prop-types": "off",
+        "react-hooks/exhaustive-deps": "off",
+        "@typescript-eslint/no-use-before-define": "off",
+        "no-use-before-define": "off",
+        "no-unused-vars": "off",
+        "@typescript-eslint/no-unused-vars": "off",
+        "no-shadow": "off",
+        "global-require": 0,
+        "import/no-dynamic-require": "off",
+        "no-underscore-dangle": "off",
+        "dot-notation": "off",
+        "react/jsx-props-no-spreading": "off",
+        "react/jsx-filename-extension": [
+            1,
+            {
+                "extensions": [
+                    ".tsx",
+                    ".ts"
+                ]
+            }
+        ]
+    }
+}

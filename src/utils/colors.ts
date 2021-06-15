@@ -1,0 +1,2 @@
+// Application colors
+export {}
